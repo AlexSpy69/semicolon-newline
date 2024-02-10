@@ -4,7 +4,7 @@ import sys
 def help_() -> None:
     print("python -m semicolon_newline (filename) (spaces)")
     print("filename: name of the file")
-    print("spaces: number of spaces used for indentation")
+    print("spaces: number of spaces used for indentation (-1 for tab indentation)")
 
 
 def semicolon_newline(string: str, spaces: int) -> str:
