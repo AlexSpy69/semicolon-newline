@@ -44,3 +44,5 @@ def main() -> None:
     file_in = open(sys.argv[1], 'r')
     file_out = open(sys.argv[1] + '.out', 'w+')
     file_out.write(semicolon_newline(file_in.read(), int(sys.argv[2])))
+    file_in.close()
+    file_out.close()
