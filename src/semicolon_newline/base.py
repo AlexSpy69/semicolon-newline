@@ -8,7 +8,7 @@ def help_() -> None:
 
 
 def semicolon_newline(string: str, spaces: int) -> str:
-    string = string.replace(' '*spaces, '\t')
+    string = string.replace(' '*spaces, '\t') if spaces != -1 else string
     new_string = ''
     in_bracket = False
     indentation = 0
